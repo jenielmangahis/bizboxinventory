@@ -1,0 +1,93 @@
+.contact-dashboard .tab-content .calendar-events-title {
+	font-size: 25px;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+.contact-dashboard .tab-content .calendar-events-header {
+	margin-bottom: 10px;
+}
+
+.list-mail-messaging{
+	list-style: none;
+	padding: 0px;
+}
+
+.list-mail-messaging li{
+	margin: 5px;
+}
+
+.list-mail-messaging li h3{
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+
+.list-mail-messaging li .email-content{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #d2d6de;
+	padding: 10px;
+}
+
+.list-mail-messaging li hr{	
+	border: 1px solid #3c8dbc;
+}
+
+.when-calendar .pignose-calendar {
+	width: 100% !important;
+}
+
+.contact-dashboard-tabs .dropdown-menu li {
+	/*background-color: #ffffff !important;*/
+}
+
+.contact-dashboard-tabs .dropdown-menu a {
+	color: #3c8dbc !important;
+}
+
+.contact-dashboard-tabs .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+	/*color: #ffffff !important;*/
+	color: #ffffff !important;
+}
+
+/* For tabs */
+.nav-tabs li{
+background-color:#3c8dbc !important;
+min-width: 8%;
+/*width: 9%;*/
+margin-right: 2px !important;    
+font-size: 13px;
+}
+.nav-tabs li a{
+padding: 10px 10px;
+color: #ffffff !important;
+}
+.nav-tabs li.active{
+background-color: #222D32 !important;
+}
+.nav-tabs li.active a{
+color:#3c8dbc !important;
+}
+.dropdown ul.dropdown-menu li a:hover{
+background-color: #3c8dbc !important;
+color: #ffffff !important;
+}
+.dropdown .user-footer div a{
+color:#666666 !important;
+}
+/*.dropdown ul.dropdown-menu li a{
+color: #ffffff !important;
+}*/
+.btn-contact-dashboard{
+width: 100%;
+margin-bottom: 2px;
+font-size: 12px;
+padding: 4px;
+}
+.small-box h3 {
+	font-size: 20px !important;
+}
+/*Quick Search*/
+#modal-quick-search-company .select2-container{
+	width: 100% !important;
+}
