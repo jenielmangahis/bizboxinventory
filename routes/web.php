@@ -79,3 +79,11 @@ Route::post('item_category/store', ['as'=>'item_category/store','uses'=>'ItemCat
 Route::get('item_category/edit/{item_category_id}', ['as'=>'item_category/edit','uses'=>'ItemCategoryController@edit'])->middleware('auth');
 Route::post('item_category/update', ['as'=>'item_category/update','uses'=>'ItemCategoryController@update'])->middleware('auth');
 Route::post('item_category/destroy', ['as'=>'item_category/destroy','uses'=>'ItemCategoryController@destroy'])->middleware('auth');
+
+//Inventory
+Route::get('/inventory', ['as'=>'inventory','uses'=>'InventoryController@index'])->middleware('auth');
+Route::get('/inventory/create', ['as'=>'inventory/create','uses'=>'InventoryController@create'])->middleware('auth');
+Route::post('inventory/store', ['as'=>'inventory/store','uses'=>'InventoryController@store'])->middleware('auth');
+Route::get('inventory/edit/{item_id}', ['as'=>'inventory/edit','uses'=>'InventoryController@edit'])->middleware('auth');
+Route::post('inventory/update', ['as'=>'inventory/update','uses'=>'InventoryController@update'])->middleware('auth');
+Route::post('inventory/destroy', ['as'=>'inventory/destroy','uses'=>'InventoryController@destroy'])->middleware('auth');

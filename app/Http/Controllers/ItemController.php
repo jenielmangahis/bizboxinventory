@@ -92,8 +92,7 @@ class ItemController extends Controller
 
         }else{
             Session::flash('message', 'Unable to create new item');
-            Session::flash('alert_class', 'alert-danger');
-            return redirect('item/create');            
+            Session::flash('alert_class', 'alert-danger');                     
             return redirect('item');
         }
     }

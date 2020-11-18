@@ -3,11 +3,19 @@
 	    <li class="header">ADMIN</li>
 	    <!-- Optionally, you can add icons to the links -->
 	    @if(UserHelper::checkUserRole(Auth::user()->group_id, 'dashboard'))
-		    <li <?php echo Route::current()->getName() == 'dashboard' ? 'class="active"' : ''; ?>>
+	    	<?php 
+	    		$action     = Route::current()->getAction();
+	    		$controller = class_basename($action['controller']);
+				list($controller, $action) = explode('@', $controller);	    		
+	    	?>
+		    <li <?php echo $controller == 'DashboardController' ? 'class="active"' : ''; ?>>
 		    	<a href="{{route('dashboard')}}"><i class="fa fa-dashboard"></i> <span>Dashboard </span></a>
 		    </li>
-		    <li <?php echo Route::current()->getName() == 'item' ? 'class="active"' : ''; ?>>
+		    <li <?php echo $controller == 'ItemController' ? 'class="active"' : ''; ?>>
 		    	<a href="{{route('item')}}"><i class="fa fa-list-alt"></i> <span>Items </span></a>
+		    </li>
+		    <li <?php echo $controller == 'InventoryController' ? 'class="active"' : ''; ?>>
+		    	<a href="{{route('inventory')}}"><i class="fa fa-list-alt"></i> <span>Inventory </span></a>
 		    </li>
 	    @endif
 	    @if(UserHelper::checkUserRole(Auth::user()->group_id, 'user_management'))   
